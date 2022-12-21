@@ -41,8 +41,8 @@ int main() {
         PhoneStore += b2;
         PhoneStore += b3;
 
-        std::cout << "Phones in shop: \n";
-        std::cout << PhoneStore;
+       cout << "Phones in shop: \n";
+       cout << PhoneStore;
         PhoneStore.showTopByPrice();
 
 

@@ -3,35 +3,35 @@
 #include <string>
 #include <iostream>
 
-class phone
+class Phone
 {
-    std::string _mark;
-    std::string _series;
-    double _price;
+    std::string mark;
+    std::string series;
+    double price;
 
 public:
-    phone(std::string const& mark, std::string const& series, double const& price) :_mark(mark), _series(series), _price(price) {};
+    Phone(std::string const& mark, std::string const& series, double const& price) :mark(mark), series(series), price(price) {};
 
     std::string mark() const
     {
-        return _mark;
+        return mark;
     }
 
     std::string series() const
     {
-        return _series;
+        return series;
     }
 
     double price() const
     {
-        return _price;
+        return price;
     }
 
 
 
 };
 
-inline std::ostream& operator <<(std::ostream& os, phone const& b) {
+inline std::ostream& operator <<(std::ostream& os, Phone const& b) {
     return os << "Mark: " << b.mark() << "; Series: " << b.series() << "; Price: " << b.price() << std::endl;
     return os;
 }
